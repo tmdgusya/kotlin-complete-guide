@@ -8,6 +8,9 @@ fun sum(numbers: IntArray): Int {
     return result
 }
 
+/**
+ * This code writing is only Last Parameter Type is lambda
+ */
 fun sumWithAggregate(numbers: IntArray): Int {
     return aggregate(numbers) { result, op -> result + op }
 }

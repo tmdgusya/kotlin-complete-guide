@@ -14,7 +14,8 @@ fun sumWithAggregate(numbers: IntArray): Int {
 
 fun max(numbers: IntArray): Int {
     return aggregate(numbers) {
-        result, op -> if (op > result) op else result
+            result, op ->
+        if (op > result) op else result
     }
 }
 

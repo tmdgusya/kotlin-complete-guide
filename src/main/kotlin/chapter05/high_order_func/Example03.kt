@@ -11,9 +11,11 @@ fun check(s: String, condition: (Char) -> Boolean): Boolean {
 
 fun main() {
 
-    println(check("hello") {
-        it.isUpperCase()
-    })
+    println(
+        check("hello") {
+            it.isUpperCase()
+        }
+    )
 
     println(check("Hello", ::isUpperCase))
 }

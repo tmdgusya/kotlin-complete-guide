@@ -32,4 +32,9 @@ fun main() {
     val message = with(Address("London", "Baker Street", "221b")) {
         "Address: $city, $street, $house"
     }
+
+    Address("London", "Baker Street", "221b").let {
+        println("To city: ${it.city}")
+        it.post("Hello")
+    }
 }

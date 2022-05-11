@@ -6,6 +6,14 @@ class Address {
     var street: String = ""
     var house: String = ""
 
+    constructor()
+
+    constructor(city: String, street: String, house: String) {
+        this.city = city
+        this.street = street
+        this.house = house
+    }
+
     fun post(message: String): Boolean {
         "Message for {$zipCode, $city, $street, $house}: $message"
         return readLine() == "OK"
@@ -19,5 +27,9 @@ fun main() {
         street = "Baker Street"
         house = "221b"
         post("Hello")
+    }
+
+    val message = with(Address("London", "Baker Street", "221b")) {
+        "Address: $city, $street, $house"
     }
 }

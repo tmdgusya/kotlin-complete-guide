@@ -31,4 +31,8 @@ fun main() {
 
     println("Original = $dataPerson1") // original
     println("Copy And Changed = ${dataPerson1.copy(firstName = "roach")}")
+
+    val (firstName, familyName, age) = dataPerson1
+
+    println("firstName = $firstName, familyName = $familyName, age = $age")
 }

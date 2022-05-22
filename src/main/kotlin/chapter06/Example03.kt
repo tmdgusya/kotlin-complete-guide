@@ -28,4 +28,7 @@ fun main() {
     println(dataPerson1 == dataPerson2) // true
     println(dataPerson1 === dataPerson3) // true diff address equality
     println(dataPerson1 == dataPerson3) // true call `equals`
+
+    println("Original = $dataPerson1") // original
+    println("Copy And Changed = ${dataPerson1.copy(firstName = "roach")}")
 }
